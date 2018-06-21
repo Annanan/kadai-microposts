@@ -1,5 +1,0 @@
-CREATE TABLE booklist2. books2 (
-      id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-      book_title VARCHAR(100),
-      created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
