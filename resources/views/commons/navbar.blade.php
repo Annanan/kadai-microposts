@@ -20,13 +20,13 @@
                                 <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::User()->id]) !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('users.favorites', 'Favorites', ['id' => Auth::User()->id]) !!}</li>
-                                <li role="separator" class="divider2"></li>
+                                <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
                             </ul>
                         </li>
                     @else
                     <li>{!! link_to_route('signup.get', 'Signup') !!}</li>
-                    <li>{!! link_to_route('users.favorites', 'Favorites') !!}</li>
+                   
                     <li>{!! link_to_route('login', 'Login') !!}</li>
                     @endif
                 </ul>
