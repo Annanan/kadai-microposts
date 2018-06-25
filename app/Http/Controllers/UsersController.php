@@ -71,7 +71,7 @@ class UsersController extends Controller
 
         $data = [
             'user' => $user,
-            'micropost' => $favorites,
+            'microposts' => $favorites,
         ];
 
         $data += $this->counts($user);

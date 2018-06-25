@@ -14,6 +14,7 @@
             </div>
         </div>
     </li>
+
 @endforeach
 </ul>
 {!! $users->render() !!}
