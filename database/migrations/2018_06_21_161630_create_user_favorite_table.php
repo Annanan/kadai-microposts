@@ -19,8 +19,8 @@ class CreateUserFavoriteTable extends Migration
             $table->integer('favorite_id')->unsigned()->index();
             $table->timestamps();
             
-            $table->foreign('user_id')->reference('id')->on('users')->onDelete('cascade');
-            $table->foreign('favorite_id')->reference('id')->on('microposts')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('favorite_id')->references('id')->on('microposts')->onDelete('cascade');
         });
     }
 
